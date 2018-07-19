@@ -13,7 +13,7 @@ const data = loadData("Executive")
 const placeContent = document.getElementById("place-content");
 
 placeContent.innerHTML +=
-    `<div>
+    `<div class="collab1">
         <h2>Collaborators</h2>
         <ul>
             <li>${data.collabs[0]}</li>
@@ -31,17 +31,17 @@ placeContent.innerHTML +=
         </ul>
     </div>`
 placeContent.innerHTML +=
-    `<div>
+    `<div class=pic1>
         <img src="${data.portrait.picture}" alt="Kanyes Portrait">
         <h3>${data.portrait.fullname}</h3>
     </div>`
  placeContent.innerHTML +=
-    `<div>
+    `<div class=country1>
         <h2>Country of Origin</h2>
         <p>${data.country[0]}</p>
     </div>`
 placeContent.innerHTML +=
-    `<div>
+    `<div class=alias1>
         <h2>Alias</h2>
         <ul>
             <li>${data.aliases[0]}</li>
