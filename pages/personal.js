@@ -13,17 +13,19 @@ const kids = data.kids;
 const placeContent = document.getElementById("flex-container");
 
 placeContent.innerHTML +=
-    `<div>
+    `<div class="kanye-container">
     <img src= "${data.kanyePic}" alt="Smiling Kanye">
+    <div>
         <h2>${data.birthName}</h2>
         <h3>${data.birthDate}</h3>
         <h3>${data.countryOfOrigin}</h3>
         <h3>${data.countryOfResidence}</h3>
+    </div>
     </div>`
 
 
 
-function addInfo(infoLocation, className, label) {
+function addInfo(infoLocation, label) {
     placeContent.innerHTML +=
         `<div class="className">
 
@@ -31,12 +33,14 @@ function addInfo(infoLocation, className, label) {
     let div = document.querySelector(".className");
     for (let i = 0; i < infoLocation.length; i++) {
         div.innerHTML +=
-            `<div>
+            `<div class = "${infoLocation[i].title}${infoLocation[i].id}">
                 <img src= "${infoLocation[i].img}" alt="${infoLocation[i].name}">
-                <h2>${infoLocation[i].name}</h2>
-                <h4>${infoLocation[i][label]}</h4>
+                <div>
+                    <h2>${infoLocation[i].name}</h2>
+                    <h4>${infoLocation[i][label]}</h4>
+                </div>
             </div>`
     }
 }
-addInfo(spouse, "spouse-container", "status");
-addInfo(kids, "kid-container", "age");
+addInfo(spouse, "status");
+addInfo(kids, "age");

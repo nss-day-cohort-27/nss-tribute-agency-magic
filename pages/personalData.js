@@ -1,7 +1,7 @@
 const personal = {
     birthName: "Kanye Omari West",
     kanyePic: "../images/kanyeWest.jpg",
-    birthDate: "June 8, 1922",
+    birthDate: "Born on June 8, 1922",
     countryOfOrigin: "Born in the United States",
     countryOfResidence: "Currently living in the United States",
     spouses: [
@@ -9,11 +9,15 @@ const personal = {
             name: "Kim Kardashian West",
             status: "Currently Married",
             img: "../images/kimKardashian.png",
+            title: "spouse",
+            id: "1"
         },
         {
             name: "Alexis Phifer",
             status: "Formerly Engaged",
             img: "../images/alexisPhifer.jpg",
+            title: "spouse",
+            id: "2"
         }
     ],
     kids: [
@@ -21,11 +25,15 @@ const personal = {
             name: "North West",
             age: "5 years old",
             img: "../images/northWest.jpg",
+            title: "kid",
+            id: "3"
         },
         {
             name: "Saint West",
             age: "2 years old",
             img: "../images/saintWest.jpg",
+            title: "kid",
+            id: "4"
         }
     ]
 }
