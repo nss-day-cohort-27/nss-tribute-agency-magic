@@ -48,4 +48,4 @@ placeContent.innerHTML +=
             <li>${data.aliases[1]}</li>
             <li>${data.aliases[2]}</li>
         </ul>
-    </div>
+    </div>`
