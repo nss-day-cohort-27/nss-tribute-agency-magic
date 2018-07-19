@@ -1,32 +1,32 @@
-
 function loadData(nameTag){
     let stringifiedObject = localStorage.getItem(nameTag);
     let parsedObject = JSON.parse(stringifiedObject);
     return parsedObject;
 }
-console.log(loadData("Executive"));
+
+console.log(loadData("news"));
 
 //Set parse data to a virable for less code when transporting data through
 //functions
-const data = loadData("Executive")
+const data = loadData("news")
 
 const placeContent = document.getElementById("place-content");
 
 placeContent.innerHTML +=
     `<div class="collab1">
-        <h2>Collaborators</h2>
+        <h2>Recent News</h2>
         <ul>
-            <li>${data.collabs[0]}</li>
-            <li>${data.collabs[1]}</li>
-            <li>${data.collabs[2]}</li>
-            <li>${data.collabs[3]}</li>
-            <li>${data.collabs[4]}</li>
-            <li>${data.collabs[5]}</li>
-            <li>${data.collabs[6]}</li>
-            <li>${data.collabs[7]}</li>
-            <li>${data.collabs[8]}</li>
-            <li>${data.collabs[9]}</li>
-            <li>${data.collabs[10]}</li>
+            <li>${data.events[0]}</li>
+            <li>${data.events[1]}</li>
+            <li>${data.events[2]}</li>
+            <li>${data.events[3]}</li>
+            <li>${data.events[4]}</li>
+            <li>${data.events[5]}</li>
+            <li>${data.events[6]}</li>
+            <li>${data.events[7]}</li>
+            <li>${data.events[8]}</li>
+            <li>${data.events[9]}</li>
+            <li>${data.events[10]}</li>
             
         </ul>
     </div>`

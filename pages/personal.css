@@ -2,3 +2,70 @@
 /*  #00EB00 - rgb(0, 212, 0) */
 /*  #IF0322 - rgb(31, 3, 34) */
 /*  #87B38D - rgb(135, 179, 141) */
+
+.kanye-container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kanye-container img {
+    height: 20em;
+}
+
+.spouse1 {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.spouse1 img {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.spouse2 {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.spouce2 img {
+    justify-content: center;
+    align-items: center;
+}
+
+.kid3 {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kid3 img {
+    justify-content: center;
+    align-items: center;
+
+}
+
+.kid4 {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kid4 img {
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
