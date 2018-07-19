@@ -59,9 +59,7 @@ html {
     background:black;
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000000), to(#a1eced));
 }
-#small-copy {
-  
-}
+
 .main-footer-div {
   background: radial-gradient(circle, rgba(161, 236, 237, .7), rgba(161, 236, 237, .3), rgba(161, 236, 237, .1), rgba(161, 236, 237, .1), rgba(161, 236, 237, .1), rgba(161, 236, 237, 0));
   color: #a1eced;
