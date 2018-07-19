@@ -1,6 +1,14 @@
 
+/* color theme! */
+/*  #00EB00 - rgb(0, 235, 0) */
+/*  #IF0322 - rgb(31, 3, 34) */
+/*  #87B38D - rgb(135, 179, 141) */
+
+
+
 html {
         background-color: powderblue;
+        color: rgb(135, 179, 141);
 }
      
 .topnav {
