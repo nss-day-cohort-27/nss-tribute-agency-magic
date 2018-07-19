@@ -3,18 +3,17 @@ function loadData(nameTag){
     let parsedObject = JSON.parse(stringifiedObject);
     return parsedObject;
 }
+
 console.log(loadData("Career"));
 
-let data = loadData("Career");
-
-let intro = data.intro;
-let skills = data.skills;
-let works = data.works;
-let homes = data.homes;
-let collabs = data.collabs;
-let awards = data.awards;
-
-let mainContent = document.querySelector(".flex-container");
+const data = loadData("Career");
+const intro = data.intro;
+const skills = data.skills;
+const works = data.works;
+const homes = data.homes;
+const collabs = data.collabs;
+const awards = data.awards;
+const mainContent = document.querySelector(".flex-container");
 
 
 function addIntro(info){
@@ -25,6 +24,7 @@ function addIntro(info){
             <p>${info.bio}</p>
         </div>`;
 }
+
 addIntro(intro);
 
 function addSkills(info){
@@ -57,9 +57,8 @@ function addAlbums(info){
             </div>`
     }
 }
+
 addAlbums(works)
-
-
 
 function addHomes(info){
     mainContent.innerHTML +=
@@ -75,6 +74,7 @@ function addHomes(info){
             </div>`
     }
 }
+
 addHomes(homes);
 
 function addCollabs(info){
@@ -89,56 +89,28 @@ function addCollabs(info){
             `<li>${info[i]}</li>`
     }
 }
+
 addCollabs(collabs);
-// mainContent.innerHTML +=
-//     `<div>
-//         <h2>Common Collaborators:</h2>
-//         <ul>
-//             <li>${collabs[0]}</li>
-//             <li>${collabs[1]}</li>
-//             <li>${collabs[2]}</li>
-//             <li>${collabs[3]}</li>
-//             <li>${collabs[4]}</li>
-//             <li>${collabs[5]}</li>
-//             <li>${collabs[6]}</li>
-//             <li>${collabs[7]}</li>
-//             <li>${collabs[8]}</li>
-//             <li>${collabs[9]}</li>
-//             <li>${collabs[10]}</li>
-//         </ul>
-//     </div>`;
-// mainContent.innerHTML += 
-//     `<div>
-//         <h2>Awards</h2>
-//         <div>
-//             <img src="${awards[0].image}" alt="Kanye at the Grammys">
-//             <h3>${awards[0].award}</h3>
-//             <ul>
-//                 <li>${awards[0].from}</li>
-//                 <li>${awards[0].work} - ${awards[0].year}</li>
-//             </ul>
-//         </div>
-//     </div>
-//     <div>
-//         <h2>Awards</h2>
-//         <div>
-//             <img src="${awards[1].image}" alt="Kanye at the Grammys">
-//             <h3>${awards[1].award}</h3>
-//             <ul>
-//                 <li>${awards[1].from}</li>
-//                 <li>${awards[1].work} - ${awards[1].year}</li>
-//             </ul>
-//         </div>
-//     </div>
-//     <div>
-//         <h2>Awards</h2>
-//         <div>
-//             <img src="${awards[2].image}" alt="Kanye at the Grammys">
-//             <h3>${awards[2].award}</h3>
-//             <ul>
-//                 <li>${awards[2].from}</li>
-//                 <li>${awards[2].work} - ${awards[2].year}</li>
-//             </ul>
-//         </div>
-//     </div>`
+
+function addAwards(info){
+    mainContent.innerHTML += 
+        `<div class="awards-flex">
+            <h2>People Really Liked 'Old Kanye'</h2>
+        </div>`;
+    let div = document.querySelector(".awards-flex");
+    for (let i = 0; i < info.length; i++) {
+        div.innerHTML += 
+            `<div>
+                <img src="${info[i].image}" alt="Kanye at the Grammys">
+                <h3>${info[i].award}</h3>
+                <ul>
+                    <li>${info[i].from}</li>
+                    <li>${info[i].work} - ${info[i].year}</li>
+                </ul>
+            </div>`
+    }
+}
+
+addAwards(awards);
+
     
