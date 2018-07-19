@@ -11,7 +11,8 @@
 }
 
 .kanye-container img {
-    height: 20em;
+    height: auto;
+    align-items: flex-start;
 }
 
 .spouse1 {
