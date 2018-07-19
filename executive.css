@@ -1,0 +1,50 @@
+.collab1 {
+    background-color: aqua;
+    padding: center;
+}
+
+.collab1 ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: space-around
+}
+
+.collab1 ul l1 {
+    margin: 1em;
+    padding: 1em;
+}
+
+
+.pic1{
+    background-color: goldenrod;
+    padding: right;
+    text-align: center
+}
+
+.country1{
+    background-color: blueviolet;
+}
+
+.alias1{
+    background-color: aqua;
+    padding: top;
+}
+
+h1 {
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 300%;
+}
+h2 {
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 300%;
+    text-align: center
+}
+p {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+    text-align: center
+}
