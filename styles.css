@@ -1,24 +1,31 @@
 
 /* color theme! */
-/*  #00EB00 - rgb(0, 235, 0) */
+/*  #00EB00 - rgb(0, 212, 0) */
 /*  #IF0322 - rgb(31, 3, 34) */
 /*  #87B38D - rgb(135, 179, 141) */
 
 
 
-html {
-        background-color: powderblue;
-        color: rgb(135, 179, 141);
+body {
+    background-color: black;
+    color: white;
+        
 }
      
 .topnav {
-        background-color: #333;
-        overflow: hidden;
+    background-color: rgb(31, 3, 34);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 .topnav a {
-        float: left;
-        display: block;
+    float: left;
+    display: block;
     color: #f2f2f2;
+    text-shadow: black .8px .8px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -26,13 +33,13 @@ html {
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: rgb(0, 212, 0);
     color: white;
 }
 
 
 .topnav a.active {
-    background-color: #4CAF50;
+    background-color: rgb(0, 212, 0);
     color: white;
 }
 
@@ -46,7 +53,7 @@ html {
 }
 
 .topnav a:hover {
-   background-color: #ddd;
+   background-color: rgba(135, 179, 141);
    color: black;
    text-decoration: none;
 }
@@ -65,38 +72,50 @@ html {
     color:white;
     height:1px;
     background:black;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000000), to(#a1eced));
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000000), to(rgb(0, 212, 0)));
 }
 
 .main-footer-div {
-  background: radial-gradient(circle, rgba(161, 236, 237, .7), rgba(161, 236, 237, .3), rgba(161, 236, 237, .1), rgba(161, 236, 237, .1), rgba(161, 236, 237, .1), rgba(161, 236, 237, 0));
-  color: #a1eced;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2em;
-  clear: both;
-  text-align: center;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background:
+        radial-gradient(
+            circle, 
+             rgba(0, 212, 0, .7),
+             rgba(0, 212, 0, .3),
+             rgba(0, 212, 0, .1),
+             rgba(0, 212, 0, .1),
+             rgba(0, 212, 0, .1),
+             rgba(0, 212, 0, 0)),
+        linear-gradient(
+            rgb(31, 3, 34), 
+            rgb(31, 3, 34));
+    color: rgb(135, 179, 141);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    clear: both;
+    text-align: center;
+    text-shadow: 
+        -1px 0 rgb(31, 3, 34), 
+        0 1px rgb(31, 3, 34), 
+        1px 0 rgb(31, 3, 34), 
+        0 -1px rgb(31, 3, 34);
 }
 
 .left-align-footer-div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-/*   flex: 0 30%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .right-align-footer-div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .social-media-icon {
-  width: 56px;
-  height: 56px;
+    width: 56px;
+    height: 56px;
 }
 
