@@ -1,42 +1,42 @@
-const personal = {
-    birthName: "Kanye Omari West",
-    intro: "June 8, 1922",
-    countryOfOrigin: "United States",
-    countryOfResidence: "United States",
-    deathDate: "Living",
-    spouce: "Kim Kardashian West",
-    kids: [
-        { 
-            name: "North West",
-            age: "5",
-            img: "northWest.jpg"
-        }, 
-        {
-            name: "Saint West",
-            age: "2"
-        }, 
-    ],
-}
-
-// localStorage.setItem("personal", "personal");
-// console.log("personal");
-
-// 
-const northWestImg = document.querySelector("#imgloc");
-northWestImg.innerHTML= `<img src="../images/${personal.kids[0].img}">`
-
-
-
-function setData(nameTag, jsObject){
-    let stringifiedObject = JSON.stringify(jsObject);
-    localStorage.setItem(nameTag, stringifiedObject);
-}
-
-setData("Personal", personal);
-
-function loadData(nameTag){
+function loadData(nameTag) {
     let stringifiedObject = localStorage.getItem(nameTag);
     let parsedObject = JSON.parse(stringifiedObject);
     return parsedObject;
 }
 console.log(loadData("Personal"));
+
+let data = loadData("Personal");
+
+const spouse = data.spouses;
+const kids = data.kids;
+
+const placeContent = document.getElementById("flex-container");
+
+placeContent.innerHTML +=
+    `<div>
+    <img src= "${data.kanyePic}" alt="Smiling Kanye">
+        <h2>${data.birthName}</h2>
+        <h3>${data.birthDate}</h3>
+        <h3>${data.countryOfOrigin}</h3>
+        <h3>${data.countryOfResidence}</h3>
+    </div>`
+
+
+
+function addInfo(infoLocation, className, label) {
+    placeContent.innerHTML +=
+        `<div class="className">
+
+        </div>`
+    let div = document.querySelector(".className");
+    for (let i = 0; i < infoLocation.length; i++) {
+        div.innerHTML +=
+            `<div>
+                <img src= "${infoLocation[i].img}" alt="${infoLocation[i].name}">
+                <h2>${infoLocation[i].name}</h2>
+                <h4>${infoLocation[i][label]}</h4>
+            </div>`
+    }
+}
+addInfo(spouse, "spouse-container", "status");
+addInfo(kids, "kid-container", "age");
