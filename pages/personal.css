@@ -6,25 +6,26 @@
 .kanye-container {
     display: -webkit-flex;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .kanye-container img {
-    height: auto;
-    align-items: flex-start;
+    object-fit: cover;
+    height: 25em;
+    justify-content: flex-start;
+    width: 20em;
 }
 
 .spouse1 {
     display: -webkit-flex;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    flex-direction: row-reverse;
 }
 
 .spouse1 img {
-    justify-content: center;
+    object-fit: cover;
+    height: 25em;
+    width: 20em;
     align-items: center;
     align-content: center;
 }
@@ -32,39 +33,39 @@
 .spouse2 {
     display: -webkit-flex;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
 }
 
-.spouce2 img {
-    justify-content: center;
-    align-items: center;
+.spouse2 img {
+    object-fit: cover;
+    height: 25em;
+    justify-content: flex-start;
+    width: 20em;
 }
 
 .kid3 {
     display: -webkit-flex;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row-reverse;
 }
 
 .kid3 img {
-    justify-content: center;
+    object-fit: cover;
+    height: 25em;
+    width: 20em;
     align-items: center;
-
+    align-content: center;
 }
 
 .kid4 {
     display: -webkit-flex;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .kid4 img {
-    justify-content: center;
-    align-items: center;
+    object-fit: cover;
+    height: 25em;
+    justify-content: flex-start;
+    width: 20em;
 }
 
 

@@ -28,7 +28,7 @@ placeContent.innerHTML +=
 function addInfo(infoLocation, label) {
     placeContent.innerHTML +=
         `<div class="className">
-
+        
         </div>`
     let div = document.querySelector(".className");
     for (let i = 0; i < infoLocation.length; i++) {
