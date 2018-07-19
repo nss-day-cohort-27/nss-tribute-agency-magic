@@ -25,14 +25,13 @@ const mainContent = document.querySelector(".flex-container");
 // Simple Function to add intro information to DOM, is VERY specific to this information
 function addIntro(info){
     mainContent.innerHTML += 
-        `<div>
+        `<div class="intro-div">
             <h2>${info.name}</h2>
             <h3>Born ${info.birth}</h3>
             <p>${info.bio}</p>
         </div>`;
 }
-// Functions called with intro variable passed into it
-addIntro(intro);
+
 
 // Function to populate skills variable, using a loop to add in list items
 function addSkills(info){
@@ -47,27 +46,28 @@ function addSkills(info){
             `<li>${info[i]}</li>`
     }
 }
-// Called in the skills variable
-addSkills(skills);
+
 
 // Function to create a div, build album cards, and place cards into the new div
 function addAlbums(info){
     mainContent.innerHTML += 
-    `<div class="album-flex">
-        <h2>Albums:</h2>
+    `<div>
+        <h2>Albums From the Greatest Person to Ever Live</h2>
+        <div class="album-flex"></div>
     </div>` // add a class to top div for targeting purpose in function and styling 
     let div = document.querySelector(".album-flex"); // grab the new div by the class
     for(let i = 0; i < info.length; i++){
         div.innerHTML +=
-            `<div>
+            `<div class="album-card">
                 <img src="${works[i].coverArt}" alt="${works[i].name} Cover">
-                <h4>${works[i].name}</h4>
-                <h4>${works[i].releaseDate}</h4>
+                <div>
+                    <h4>${works[i].name}</h4>
+                    <h5>${works[i].releaseDate}</h5>
+                </div>
             </div>` // use loop to add all album cards to above div
     }
 }
-// Called in the works variable
-addAlbums(works)
+
 
 // function, similar to the albums function, to build home cards instead.
 function addHomes(info){
@@ -84,8 +84,7 @@ function addHomes(info){
             </div>`
     }
 }
-// Called in homes variable
-addHomes(homes);
+
 
 // Another list-item populating function to list the collaborators, this time targeting this ul
 // Specifically because other ul's now exist in the DOM
@@ -101,8 +100,7 @@ function addCollabs(info){
             `<li>${info[i]}</li>`
     }
 }
-// Called in the collabs variable
-addCollabs(collabs);
+
 
 // Another card building Function for awards this time, populating a slightly more complex HTML 
 // Structure for the award cards
@@ -124,7 +122,22 @@ function addAwards(info){
             </div>`
     }
 }
+
+// Functions called with intro variable passed into it
+addIntro(intro);
+
+// Called in the skills variable
+addSkills(skills);
+
+// Called in the collabs variable
+addCollabs(collabs);
+
+// Called in the works variable
+addAlbums(works)
+
+// Called in homes variable
+addHomes(homes);
+
 // Called in final data structure variable, awards
 addAwards(awards);
 
-    

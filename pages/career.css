@@ -1,0 +1,68 @@
+.flex-container {
+
+}
+
+.intro-div {
+    padding: 1em;
+}
+
+.intro-div h3 {
+    font-size: 1em;
+    text-align: center;
+}
+
+.skills-list {
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.album-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.album-flex div {
+    width: 40%;
+    margin: 1em;
+
+}
+
+.album-flex img {
+    width: 200px;
+    height: 200px;
+}
+
+.album-card {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.album-card div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.album-card h4 {
+    font-size: 1em;
+}
+
+.album-card h5 {}
+
+.mansion-flex {
+
+}
+
+.collabs-list {
+
+}
+
+.awards-flex {
+
+}
