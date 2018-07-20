@@ -6,10 +6,12 @@
 .collab1 {
     background-color: black;
     padding: center;
+
 }
 
 .collab1 ul {
     display: flex;
+    flex-wrap: wrap;
     text-decoration: none;
     list-style-type: none;
     justify-content: space-around

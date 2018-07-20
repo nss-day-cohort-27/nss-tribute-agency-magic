@@ -34,16 +34,18 @@ placeContent.innerHTML +=
     `<div class="collab1">
         <h2>Collaborators</h2>
         <ul>
-            <li>${data.collabs[0]}${data.collabs.artpic[0]}</li>
-            <li>${data.collabs[1]}</li>
-            <li>${data.collabs[2]}</li>
-            <li>${data.collabs[3]}</li>
-            <li>${data.collabs[4]}</li>
-            <li>${data.collabs[5]}</li>
-            <li>${data.collabs[6]}</li>
-            <li>${data.collabs[7]}</li>
-            <li>${data.collabs[8]}</li>
-            <li>${data.collabs[9]}</li>
-            <li>${data.collabs[10]}</li>
+            <li>${data.collabs[0].artist}</li><img src="${data.collabs[0].artpic}" alt="Twista Pic">
+            <li>${data.collabs[1].artist}</li><img src="${data.collabs[1].artpic}" alt="Twista Pic">
+            <li>${data.collabs[2].artist}</li><img src="${data.collabs[2].artpic}" alt="Twista Pic">
+            <li>${data.collabs[3].artist}</li><img src="${data.collabs[3].artpic}" alt="Twista Pic">
+            <li>${data.collabs[4].artist}</li><img src="${data.collabs[4].artpic}" alt="Twista Pic">
+            <li>${data.collabs[5].artist}</li><img src="${data.collabs[5].artpic}" alt="Twista Pic">
+            <li>${data.collabs[6].artist}</li><img src="${data.collabs[6].artpic}" alt="Twista Pic">
+            <li>${data.collabs[7].artist}</li><img src="${data.collabs[7].artpic}" alt="Twista Pic">
+            <li>${data.collabs[8].artist}</li><img src="${data.collabs[8].artpic}" alt="Twista Pic">
+            <li>${data.collabs[9].artist}</li><img src="${data.collabs[9].artpic}" alt="Twista Pic">
+            <li>${data.collabs[10].artist}</li><img src="${data.collabs[10].artpic}" alt="Twista Pic">
+            
+           
         </ul>
     </div>`
