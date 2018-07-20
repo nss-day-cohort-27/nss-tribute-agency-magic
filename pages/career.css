@@ -3,9 +3,7 @@
 /*  #IF0322 - rgb(31, 3, 34) */
 /*  #87B38D - rgb(135, 179, 141) */
 
-.flex-container {
 
-}
 
 .similar-content {
     background:
@@ -80,7 +78,6 @@
 .flex-details > div p {
     color: white;
     padding: 1.5em;
-    background-color
 }
 
 .flex-details ul {
@@ -93,9 +90,7 @@
     color: white;
 }
 
-.skills-list {
 
-}
 
 .album-container {
     background: 
@@ -213,9 +208,7 @@ h2 {
     border-radius: 5px;
 }
 
-.collabs-list {
 
-}
 
 .awards-container {
     background:
@@ -257,6 +250,3 @@ h2 {
     padding: 0;
 }
 
-.awards-flex ul li {
-    
-}
