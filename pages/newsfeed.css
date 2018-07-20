@@ -7,21 +7,111 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    background: linear-gradient(
+        rgb(31, 3, 34),
+       black 
+    );
+    color: white;  
+}
+.newsfeed-flex h2 {
+    font-size: 4em;
+    text-align: center;
+    color: rgb(0, 212, 0); 
+    text-shadow: 0 1px 0 rgb(0, 160, 0),
+               0 2px 0 rgb(0, 140, 0),
+               0 3px 0 rgb(0, 120, 0),
+               0 4px 0 rgb(0, 100, 0),
+               0 5px 0 rgb(0, 80, 0),
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+.home h2 {
+    font-size: 2em;
+    text-align: center;
+    color: rgb(0, 212, 0); 
+    text-shadow: 0 1px 0 rgb(0, 160, 0),
+               0 2px 0 rgb(0, 140, 0),
+               0 3px 0 rgb(0, 120, 0),
+               0 4px 0 rgb(0, 100, 0),
+               0 5px 0 rgb(0, 80, 0),
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
 
 .place-content {
     max-width: 65%;
     margin: 1em;
     padding: 1em;
+      
 }
 
 .twitter-feed-div {
     width: 65%;
     margin: 1em;
+    margin-bottom: auto;
+    border: solid goldenrod;
+    
+    
+}
+.newsfeed-flex div {
+    opacity: .7;
+    margin-top: 1.5em;
+}
+.newsfeed-flex div:hover {
+    opacity: 1;
+}
+.flex-container img {
+  width:100%;
+  box-shadow: 0 15px 10px -10px rgba(0, 212, 0, 0.7); 
+  margin-bottom: 1.5em;
+  
 }
 
-img {
-  width:100%;
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+
+body {
+    margin: 0;
+    height: 1000px;
+  }
+  
+.top {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    background-color: #aaa;
+    height: 300px;
+    opacity: 1;
+    text-align: center;
+    font-family: 'helvetica';
+    font-size: 80px;
+    font-weight: 100;
+    color: #fff;
 }
+
+.title {
+    position: absolute;
+    top: 60%;
+    left: 100px;
+}
+
+  
+
+
+
+
 
 
