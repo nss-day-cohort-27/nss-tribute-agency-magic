@@ -3,52 +3,71 @@
 /*  #IF0322 - rgb(31, 3, 34) */
 /*  #87B38D - rgb(135, 179, 141) */
 
-.kanye-container {
+.kanye-container-flex {
     display: -webkit-flex;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(31, 3, 34);
+    width: 50%;
+    margin: auto;
+}
+
+.kanye-container {
+    background-color: rgb(31, 3, 34);
+}
+.kanye-container h1 {
+    text-align: center
 }
 
 .kanye-container img {
     object-fit: cover;
-    height: 25em;
+    height: 400px;
     align-self: center;
-    width: 20em;
+    width: 400px;
+    margin: 20px;
+    box-shadow: 0 8px 6px -6px rgb(0, 212, 0);
+    background-color: rgb(31, 3, 34);
 }
 
 .spouse1 {
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
-    width: 35%;
+    width: 50%;
     align-items: center;
+    background-color: rgb(31, 3, 34);
 }
 
 .spouse1 img {
     align-items: center;
     align-content: center;
     object-fit: cover;
-    object-position: 100% 0;
     width: 400px;
     height: 400px;
+    margin: 20px;
+    box-shadow: 0 8px 6px -6px rgb(0, 212, 0);
+    background-color: rgb(31, 3, 34);
 }
 
 .kid2 {
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
-    width: 35%;
+    width: 50%;
     align-items: center;
+    background-color: rgb(31, 3, 34);
 }
 
 .kid2 img {
     align-items: center;
     align-content: center;
     object-fit: cover;
-    object-position: 100% 0;
     width: 400px;
     height: 400px;
+    margin: 20px;
+    box-shadow: 0 8px 6px -6px rgb(0, 212, 0);
+    background-color: rgb(31, 3, 34);
 }
 
 .content-flex{
@@ -56,6 +75,8 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: rgb(31, 3, 34);
+    padding-bottom: 20px;
 }
 
 .insert-content{
@@ -63,4 +84,5 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: rgb(31, 3, 34);
 }

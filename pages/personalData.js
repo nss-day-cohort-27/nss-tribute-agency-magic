@@ -1,4 +1,5 @@
 const personal = {
+    pageTitle: "Personal",
     birthName: "Kanye Omari West",
     kanyePic: "../images/kanyeWest.jpg",
     birthDate: "Born on June 8, 1922",
