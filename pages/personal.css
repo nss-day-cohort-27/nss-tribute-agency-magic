@@ -3,69 +3,86 @@
 /*  #IF0322 - rgb(31, 3, 34) */
 /*  #87B38D - rgb(135, 179, 141) */
 
-.kanye-container {
+.kanye-container-flex {
     display: -webkit-flex;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(31, 3, 34);
+    width: 50%;
+    margin: auto;
+}
+
+.kanye-container {
+    background-color: rgb(31, 3, 34);
+}
+.kanye-container h1 {
+    text-align: center
 }
 
 .kanye-container img {
-    height: 20em;
+    object-fit: cover;
+    height: 400px;
+    align-self: center;
+    width: 400px;
+    margin: 20px;
+    box-shadow: 0 8px 6px -6px rgb(0, 212, 0);
+    background-color: rgb(31, 3, 34);
 }
 
 .spouse1 {
     display: -webkit-flex;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    width: 50%;
     align-items: center;
-    align-content: center;
+    background-color: rgb(31, 3, 34);
 }
 
 .spouse1 img {
-    justify-content: center;
     align-items: center;
     align-content: center;
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: 0 8px 6px -6px rgb(0, 212, 0);
+    background-color: rgb(31, 3, 34);
 }
 
-.spouse2 {
+.kid2 {
     display: -webkit-flex;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    background-color: rgb(31, 3, 34);
+}
+
+.kid2 img {
     align-items: center;
     align-content: center;
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: 0 8px 6px -6px rgb(0, 212, 0);
+    background-color: rgb(31, 3, 34);
 }
 
-.spouce2 img {
-    justify-content: center;
-    align-items: center;
-}
-
-.kid3 {
-    display: -webkit-flex;
+.content-flex{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(31, 3, 34);
+    padding-bottom: 20px;
 }
 
-.kid3 img {
-    justify-content: center;
-    align-items: center;
-
-}
-
-.kid4 {
-    display: -webkit-flex;
+.insert-content{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(31, 3, 34);
 }
-
-.kid4 img {
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
