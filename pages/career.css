@@ -25,20 +25,72 @@
 
 .intro-div h2 {
     width: 100%;
+    font-size: 4em;
+    text-shadow: 0 1px 0 rgb(0, 160, 0),
+               0 2px 0 rgb(0, 140, 0),
+               0 3px 0 rgb(0, 120, 0),
+               0 4px 0 rgb(0, 100, 0),
+               0 5px 0 rgb(0, 80, 0),
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    padding-bottom: 0;
 } 
 
-.intro-div h3 {
-    font-size: 1em;
+.intro-div > h3 {
+    font-size: 2em;
     text-align: center;
+    text-shadow: 0 1px 0 rgb(0, 160, 0),
+               0 2px 0 rgb(0, 140, 0),
+               0 3px 0 rgb(0, 120, 0),
+               0 4px 0 rgb(0, 100, 0),
+               0 5px 0 rgb(0, 80, 0),
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    margin-bottom: 1em;
 }
-
+.intro-div h4 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 .flex-details {
     display: flex;
     justify-content: space-around;
 }
 
-.flex-details p {
-    width: 35%;
+.flex-details h3 {
+    text-align: center;
+}
+
+.flex-details > div {
+    width: 100%;
+}
+
+.flex-details > div p {
+    color: white;
+    padding: 1.5em;
+    background-color
+}
+
+.flex-details ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 1.5em;
+}
+
+.flex-details ul li {
+    color: white;
 }
 
 .skills-list {
@@ -59,12 +111,12 @@
 		-.3px -.3px 0 black,
 		.3px -.3px 0 black,
 		-.3px .3px 0 black,
-		.3px .3px 0 black;
+        .3px .3px 0 black;
 }
 
 h2 {
     text-align: center;
-    padding: 1em;
+    padding: .5em;
     background: linear-gradient(
         rgba(0, 0, 0, 0.9), 
         rgba(0, 0, 0, 0.05));
@@ -74,13 +126,14 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 1em;
     
 }
 
 .album-flex div {
-    width: 40%;
-    margin: 2em;
+    /* width: 40%; */
+    margin: 1.5em;
 
 }
 
@@ -88,15 +141,15 @@ h2 {
     width: 200px;
     height: 200px;
     /* box-shadow: rgba(255, 255, 255, 0.5) -3px 3px -3px 3px; */
-    /* border-radius: 5px; */
-    box-shadow: 0 15px 10px -10px rgb(0, 212, 0);
+    border-radius: 5px;
+    box-shadow: 0 15px 10px -10px rgba(0, 212, 0, 0.7);
     
   
 }
 
 .album-card {
     display: flex;
-    width: auto;
+    width: 40%;
     height: auto;
 }
 
@@ -129,6 +182,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-around;
     height: auto;
+    padding: 1em;
 }
 
 .mansion-flex div {
@@ -177,6 +231,7 @@ h2 {
         0 1px rgb(31, 3, 34), 
         1px 0 rgb(31, 3, 34), 
         0 -1px rgb(31, 3, 34);
+    padding: 1em;
 }
 
 .awards-flex {

@@ -5,7 +5,7 @@ const career = {
             bio: "An American rapper, singer, songwriter, record producer, entrepreneur and fashion designer. Born in Atlanta and raised in Chicago, West first became known as a producer for Roc-A-Fella Records in the early 2000s, contributing to hit singles for artists such as Jay-Z, Ludacris and Alicia Keys. Intent on pursuing a solo career as a rapper, West released his debut album The College Dropout in 2004 to widespread critical and commercial success, and founded the record label GOOD Music. He went on to pursue a variety of styles on subsequent albums, including the polarizing but influential 808s & Heartbreak (2008). He released the critically acclaimed album My Beautiful Dark Twisted Fantasy in 2010, and followed with albums such as the abrasive Yeezus (2013) and fragmented The Life of Pablo (2016), full-length collaborations with Jay-Z and Kid Cudi, and production work for artists such as Pusha T and Nas."
     }
     ,
-    skills: ["Rapping", "Producing Music", "Antoagonizing his Fanbase"],
+    skills: ["Rapping", "Producing Music", "Antoagonizing his Fanbase", "Marrying Wealth", "Collaborating with More Successful People", "Arrogance", "Narcicsism", "Interrupting Other People Recieving Awards"],
     works: [
         { 
             name: "The College Dropout",

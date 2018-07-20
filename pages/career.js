@@ -35,9 +35,15 @@ function addIntro(info){
         `<div class="intro-div">
             <h2>${info.name}</h2>
             <h3>Born ${info.birth}</h3>
+            <div class="bottom-div">
+                <span class="sexy_line"></span>
+            </div>
             <h4>The Career of Yeezus</h4>
             <div class="flex-details">
-                <p>${info.bio}</p>
+                <div>
+                    <h3>A Prolific Rise</h3>    
+                    <p>${info.bio}</p>
+                </div>
             </div>
         </div>`;
 }
@@ -47,7 +53,7 @@ function addIntro(info){
 function addSkills(info){
     introDivContent.innerHTML +=
         `<div>
-            <h3>Notable Skills:</h3>
+            <h3>Notable Skills</h3>
             <ul class="skills-list"></ul>
         </div>`;
     let ul = document.querySelector(".skills-list");
@@ -103,7 +109,7 @@ function addHomes(info){
 function addCollabs(info){
     introDivContent.innerHTML +=
         `<div>
-            <h3>Common Collaborators:</h3>
+            <h3>Common Collaborators</h3>
             <ul class="collabs-list"></ul>
         </div>`
     let ul = document.querySelector(".collabs-list"); // currently in love with querySelector. 
