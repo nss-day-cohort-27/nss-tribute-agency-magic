@@ -16,30 +16,6 @@ placeContent.innerHTML +=
     `<div class=pic1>
         <h1><stong>${data.portrait.fullname}</strong></h1>
     </div>`
-
-placeContent.innerHTML +=
-    `<div class="collab1">
-        <h2>Collaborators</h2>
-        <ul>
-            <li>${data.collabs[0]}</li>
-            <li>${data.collabs[1]}</li>
-            <li>${data.collabs[2]}</li>
-            <li>${data.collabs[3]}</li>
-            <li>${data.collabs[4]}</li>
-            <li>${data.collabs[5]}</li>
-            <li>${data.collabs[6]}</li>
-            <li>${data.collabs[7]}</li>
-            <li>${data.collabs[8]}</li>
-            <li>${data.collabs[9]}</li>
-            <li>${data.collabs[10]}</li>
-            
-        </ul>
-    </div>`
- placeContent.innerHTML +=
-    `<div class=country1>
-        <h1>Country of Origin</h1>
-        <p>${data.country[0]}</p>
-    </div>`
 placeContent.innerHTML +=
     `<div class=alias1>
         <h2>Alias</h2>
@@ -49,3 +25,28 @@ placeContent.innerHTML +=
             <li>${data.aliases[2]}</li>
         </ul>
     </div>`
+placeContent.innerHTML +=
+    `<div class=country1>
+        <h1>Country of Origin</h1>
+        <p>${data.country[0]}</p>
+    </div>`
+
+    
+function addCollabs(info){
+    placeContent.innerHTML +=
+        `<div class="collab-container">
+            <h2>Collaborators</h2>
+            <div class="collab1">
+            </div>
+        </div>`
+    let div = document.querySelector(".collab1");
+    for (let i = 0; i < info.length; i++) {
+        div.innerHTML +=
+        `<div class="collabs-card">
+            <img src="${info[i].artpic}" alt="Collabs Pic">    
+            <p>${info[i].artist}</p>
+        </div>`
+    }
+}
+
+addCollabs(data.collabs);
