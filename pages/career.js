@@ -35,7 +35,10 @@ function addIntro(info){
         `<div class="intro-div">
             <h2>${info.name}</h2>
             <h3>Born ${info.birth}</h3>
-            <p>${info.bio}</p>
+            <h4>The Career of Yeezus</h4>
+            <div class="flex-details">
+                <p>${info.bio}</p>
+            </div>
         </div>`;
 }
 
@@ -137,7 +140,7 @@ function addAwards(info){
 // Functions called with intro variable passed into it
 addIntro(intro);
 
-const introDivContent = document.querySelector(".intro-div")
+const introDivContent = document.querySelector(".flex-details")
 
 // Called in the skills variable
 addSkills(skills);
