@@ -4,7 +4,7 @@
 /*  #87B38D - rgb(135, 179, 141) */
 
 .collab1 {
-    background-color: aqua;
+    background-color: black;
     padding: center;
 }
 
@@ -28,27 +28,34 @@
 }
 
 .country1{
-    background-color: blueviolet;
+    background-color: goldenrod;
 }
 
 .alias1{
-    background-color: aqua;
-    padding: top;
+    background-color:black;
+    text-align: center;
+}
+
+.alias1 ul {
+    list-style-position: inside;
+    list-style-type: none;
+    padding: 0;
 }
 
 h1 {
     color:black;
     font-family: 'Times New Roman', Times, serif;
     font-size: 300%;
+    text-align: center;
 }
 h2 {
-    color:black;
+    color:whitesmoke;
     font-family: 'Times New Roman', Times, serif;
     font-size: 300%;
     text-align: center
 }
 p {
-    color: black;
+    color:black;
     font-family: 'Times New Roman', Times, serif;
     font-size: 200%;
     text-align: center

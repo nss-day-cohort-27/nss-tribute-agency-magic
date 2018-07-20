@@ -3,6 +3,26 @@
 /*  #IF0322 - rgb(31, 3, 34) */
 /*  #87B38D - rgb(135, 179, 141) */
 
+.flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.place-content {
+    max-width: 65%;
+    margin: 1em;
+    padding: 1em;
+}
+
+.twitter-feed-div {
+    width: 65%;
+    margin: 1em;
+}
+
+img {
+  width:100%;
+}
 
 .timeline {
     list-style: none;

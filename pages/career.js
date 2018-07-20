@@ -51,7 +51,7 @@ function addSkills(info){
 // Function to create a div, build album cards, and place cards into the new div
 function addAlbums(info){
     mainContent.innerHTML += 
-    `<div>
+    `<div class="album-container">
         <h2>Albums From the Greatest Person to Ever Live</h2>
         <div class="album-flex"></div>
     </div>` // add a class to top div for targeting purpose in function and styling 
@@ -72,14 +72,16 @@ function addAlbums(info){
 // function, similar to the albums function, to build home cards instead.
 function addHomes(info){
     mainContent.innerHTML +=
-        `<div class="mansion-flex">
+        `<div class="home-container">
             <h2>A Splash of Wealth to Complement a Rapidly Declining Mental Health</h2>
+            <div class="mansion-flex">
+            </div>
         </div>`
     let div = document.querySelector(".mansion-flex");
     for(let i = 0; i < info.length; i++){
         div.innerHTML +=
             `<div>
-                <img src="${info[i].image}" alt="${info[i].title}">
+                <img src="${info[i].image}" alt="${info[i].title}" class="mansion-img">
                 <h3>${info[i].title}</h3>            
             </div>`
     }
