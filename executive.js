@@ -1,4 +1,5 @@
 
+
 function loadData(nameTag){
     let stringifiedObject = localStorage.getItem(nameTag);
     let parsedObject = JSON.parse(stringifiedObject);
@@ -14,11 +15,10 @@ const placeContent = document.getElementById("place-content");
 
 placeContent.innerHTML +=
     `<div class=pic1>
-        <h1><stong>${data.portrait.fullname}</strong></h1>
+        <h1>${data.portrait.fullname}</h1>
     </div>`
 placeContent.innerHTML +=
     `<div class=alias1>
-        <h2>Alias</h2>
         <ul>
             <li>${data.aliases[0]}</li>
             <li>${data.aliases[1]}</li>

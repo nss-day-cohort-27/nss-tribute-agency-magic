@@ -20,7 +20,13 @@ body {
     position: fixed;
     width: 100%;
     z-index: 1;
+    opacity: .2;
 }
+
+.topnav:hover {
+    opacity: .9;
+}
+
 .topnav a {
     float: left;
     display: block;
@@ -55,18 +61,17 @@ body {
    background-color: white;
    color: black;
    text-decoration: none;
+   text-shadow: none;
 }
 
 .topnav .icon {
    display: none;
 }
 
-.bottom-div{
-    margin-top:50px;
-}
 
 .sexy_line{ 
     display:block;
+    margin: 0;
     border:none;
     color:white;
     height:1px;
@@ -116,5 +121,8 @@ body {
 .social-media-icon {
     width: 56px;
     height: 56px;
+    opacity: .65;
 }
-
+.social-media-icon:hover {
+    opacity: 1;
+}
