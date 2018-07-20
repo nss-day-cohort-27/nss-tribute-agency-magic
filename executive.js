@@ -30,22 +30,23 @@ placeContent.innerHTML +=
         <h1>Country of Origin</h1>
         <p>${data.country[0]}</p>
     </div>`
-placeContent.innerHTML +=
-    `<div class="collab1">
-        <h2>Collaborators</h2>
-        <ul>
-            <li>${data.collabs[0].artist}</li><img src="${data.collabs[0].artpic}" alt="Twista Pic">
-            <li>${data.collabs[1].artist}</li><img src="${data.collabs[1].artpic}" alt="Twista Pic">
-            <li>${data.collabs[2].artist}</li><img src="${data.collabs[2].artpic}" alt="Twista Pic">
-            <li>${data.collabs[3].artist}</li><img src="${data.collabs[3].artpic}" alt="Twista Pic">
-            <li>${data.collabs[4].artist}</li><img src="${data.collabs[4].artpic}" alt="Twista Pic">
-            <li>${data.collabs[5].artist}</li><img src="${data.collabs[5].artpic}" alt="Twista Pic">
-            <li>${data.collabs[6].artist}</li><img src="${data.collabs[6].artpic}" alt="Twista Pic">
-            <li>${data.collabs[7].artist}</li><img src="${data.collabs[7].artpic}" alt="Twista Pic">
-            <li>${data.collabs[8].artist}</li><img src="${data.collabs[8].artpic}" alt="Twista Pic">
-            <li>${data.collabs[9].artist}</li><img src="${data.collabs[9].artpic}" alt="Twista Pic">
-            <li>${data.collabs[10].artist}</li><img src="${data.collabs[10].artpic}" alt="Twista Pic">
-            
-           
-        </ul>
-    </div>`
+
+    
+function addCollabs(info){
+    placeContent.innerHTML +=
+        `<div class="collab-container">
+            <h2>Collaborators</h2>
+            <div class="collab1">
+            </div>
+        </div>`
+    let div = document.querySelector(".collab1");
+    for (let i = 0; i < info.length; i++) {
+        div.innerHTML +=
+        `<div class="collabs-card">
+            <img src="${info[i].artpic}" alt="Collabs Pic">    
+            <p>${info[i].artist}</p>
+        </div>`
+    }
+}
+
+addCollabs(data.collabs);

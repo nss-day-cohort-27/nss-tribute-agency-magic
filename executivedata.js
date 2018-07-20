@@ -24,27 +24,27 @@ const executive = {
     },
     { 
         artist: "Rick Ross",
-        artpic: "../images/twista.jpg"
+        artpic: "images/rickross.jpg"
     },
     {
         artist: "Bon Iver",
-        artpic: "../images/twista.jpg"
+        artpic: "images/boniver.jpg"
     },
     {        
         artist: "Big Sean",
-        artpic: "../images/twista.jpg"
+        artpic: "images/bigsean.jpg"
     },
     {
         artist: "2 Chains",
-        artpic: "../images/twista.jpg"
+        artpic: "images/twochainz.jpg"
     },
     {  
         artist: "Katie Perry",
-        artpic: "../images/twista.jpg"
+        artpic: "images/katyperry.jpg"
     },
     {
         artist: "Donald Trump",
-        artpic: "../images/twista.jpg"
+        artpic: "images/donaldtrump.jpg"
     }
 ],
     portrait:
