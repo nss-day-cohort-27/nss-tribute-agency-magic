@@ -2,24 +2,65 @@
 /*  #00EB00 - rgb(0, 212, 0) */
 /*  #IF0322 - rgb(31, 3, 34) */
 /*  #87B38D - rgb(135, 179, 141) */
+.collab-container h2 {
+    color: rgb(0, 212, 0);
+    font-size: 3em;
+    text-shadow: 0 1px 0 rgb(0, 160, 0),
+               0 2px 0 rgb(0, 140, 0),
+               0 3px 0 rgb(0, 120, 0),
+               0 4px 0 rgb(0, 100, 0),
+               0 5px 0 rgb(0, 80, 0),
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+
+}
 
 .collab1 {
     background-color: black;
     padding: center;
-}
-
-.collab1 ul {
+    color: white;
     display: flex;
+    flex-wrap: wrap;
     text-decoration: none;
     list-style-type: none;
     justify-content: space-around
+
 }
 
-.collab1 ul l1 {
+.collabs-card {
+    display: flex;
+    flex-direction: column;
+    background: 
+        linear-gradient(
+            black,
+            rgb(31, 3, 34));
     margin: 1em;
     padding: 1em;
+
 }
 
+.collabs-card:hover {
+    background-color: white;
+    color: black;
+}
+
+.collabs-card img {
+    border-radius: 5px;
+    box-shadow: 0 15px 10px -10px rgba(0, 212, 0, 0.6);
+}
+
+.collabs-card p {
+    margin-top: 1em;
+    color: rgb(0, 212, 0);
+    text-align: center;
+    font-size: 1.5em;
+
+}
 
 .pic1{
     background-color: goldenrod;
