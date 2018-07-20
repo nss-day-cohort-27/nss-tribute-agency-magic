@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="career.css">
+    <link rel="stylesheet" href="newsfeed.css">
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
 
@@ -59,20 +59,22 @@
             </a>
         </div>
         <!-- main content containers/html here -->
-        <div id="place-content"> </div>
-    </main>
-<!-- twitter feed here -->
-    <div>
         <script src="http://widgets.macroaxis.com/widgets/url.jsp?t=42"></script>
-        <article>
-            <center>
-                <a class="twitter-timeline" href="https://twitter.com/kanyewest?ref_src=twsrc%5Etfw">Tweets by kanyewest</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </center>
-        </article>
-
-
-    </div>
+        <div class="flex-container">
+            <div id="place-content"> </div>
+            <div class="twitter-feed-div">
+                <script src="http://widgets.macroaxis.com/widgets/url.jsp?t=42"></script>
+                <article>
+                    <center>
+                        <a class="twitter-timeline" href="https://twitter.com/kanyewest?ref_src=twsrc%5Etfw">Tweets by kanyewest</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </center>
+                </article>
+            </div>
+        </div>
+    </main>
+    <!-- twitter feed here -->
+    
     <footer>
         <!-- footer icons -->
         <div class="bottom-div">
@@ -106,7 +108,7 @@
         </div>
     </footer>
     <!-- Optional JavaScript -->
-    <script src="main.js"></script>
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -116,6 +118,7 @@
         crossorigin="anonymous"></script>
     <script src="newsfeeddata.js"></script>
     <script src="newsfeed.js"></script>
+    <script src="../main.js"></script>
 
 </body>
 
