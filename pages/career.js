@@ -22,9 +22,16 @@ const awards = data.awards;
 // Reached out to DOM to grab main div for placing data into DOM
 const mainContent = document.querySelector(".flex-container");
 
+mainContent.innerHTML +=
+    `<div class="similar-content">
+
+    </div>`;
+
+const introContent = document.querySelector(".similar-content");    
+
 // Simple Function to add intro information to DOM, is VERY specific to this information
 function addIntro(info){
-    mainContent.innerHTML += 
+    introContent.innerHTML += 
         `<div class="intro-div">
             <h2>${info.name}</h2>
             <h3>Born ${info.birth}</h3>
@@ -35,7 +42,7 @@ function addIntro(info){
 
 // Function to populate skills variable, using a loop to add in list items
 function addSkills(info){
-    mainContent.innerHTML +=
+    introDivContent.innerHTML +=
         `<div>
             <h3>Notable Skills:</h3>
             <ul class="skills-list"></ul>
@@ -91,9 +98,9 @@ function addHomes(info){
 // Another list-item populating function to list the collaborators, this time targeting this ul
 // Specifically because other ul's now exist in the DOM
 function addCollabs(info){
-    mainContent.innerHTML +=
+    introDivContent.innerHTML +=
         `<div>
-            <h2>Common Collaborators:</h2>
+            <h3>Common Collaborators:</h3>
             <ul class="collabs-list"></ul>
         </div>`
     let ul = document.querySelector(".collabs-list"); // currently in love with querySelector. 
@@ -108,25 +115,29 @@ function addCollabs(info){
 // Structure for the award cards
 function addAwards(info){
     mainContent.innerHTML += 
-        `<div class="awards-flex">
+        `<div class="awards-container">
             <h2>People Really Liked 'Old Kanye'</h2>
         </div>`;
-    let div = document.querySelector(".awards-flex");
+    let div = document.querySelector(".awards-container");
     for (let i = 0; i < info.length; i++) {
         div.innerHTML += 
-            `<div>
+            `<div class="awards-flex">
                 <img src="${info[i].image}" alt="Kanye at the Grammys">
-                <h3>${info[i].award}</h3>
-                <ul>
-                    <li>${info[i].from}</li>
-                    <li>${info[i].work} - ${info[i].year}</li>
-                </ul>
+                <div>
+                    <h3>${info[i].award}</h3>
+                    <ul>
+                        <li>${info[i].from}</li>
+                        <li>${info[i].work} - ${info[i].year}</li>
+                    </ul>
+                </div>
             </div>`
     }
 }
 
 // Functions called with intro variable passed into it
 addIntro(intro);
+
+const introDivContent = document.querySelector(".intro-div")
 
 // Called in the skills variable
 addSkills(skills);
