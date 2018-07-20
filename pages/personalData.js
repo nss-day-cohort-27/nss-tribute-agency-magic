@@ -17,7 +17,7 @@ const personal = {
             status: "Formerly Engaged",
             img: "../images/alexisPhifer.jpg",
             title: "spouse",
-            id: "2"
+            id: "1"
         }
     ],
     kids: [
@@ -26,14 +26,14 @@ const personal = {
             age: "5 years old",
             img: "../images/northWest.jpg",
             title: "kid",
-            id: "3"
+            id: "2"
         },
         {
             name: "Saint West",
             age: "2 years old",
             img: "../images/saintWest.jpg",
             title: "kid",
-            id: "4"
+            id: "2"
         }
     ]
 }

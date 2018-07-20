@@ -6,68 +6,61 @@
 .kanye-container {
     display: -webkit-flex;
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
 }
 
 .kanye-container img {
     object-fit: cover;
     height: 25em;
-    justify-content: flex-start;
+    align-self: center;
     width: 20em;
 }
 
 .spouse1 {
     display: -webkit-flex;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    width: 35%;
+    align-items: center;
 }
 
 .spouse1 img {
-    object-fit: cover;
-    height: 25em;
-    width: 20em;
     align-items: center;
     align-content: center;
+    object-fit: cover;
+    object-position: 100% 0;
+    width: 400px;
+    height: 400px;
 }
 
-.spouse2 {
+.kid2 {
     display: -webkit-flex;
     display: flex;
+    flex-direction: row;
+    width: 35%;
+    align-items: center;
 }
 
-.spouse2 img {
-    object-fit: cover;
-    height: 25em;
-    justify-content: flex-start;
-    width: 20em;
-}
-
-.kid3 {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.kid3 img {
-    object-fit: cover;
-    height: 25em;
-    width: 20em;
+.kid2 img {
     align-items: center;
     align-content: center;
-}
-
-.kid4 {
-    display: -webkit-flex;
-    display: flex;
-}
-
-.kid4 img {
     object-fit: cover;
-    height: 25em;
-    justify-content: flex-start;
-    width: 20em;
+    object-position: 100% 0;
+    width: 400px;
+    height: 400px;
 }
 
+.content-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
-
-
+.insert-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

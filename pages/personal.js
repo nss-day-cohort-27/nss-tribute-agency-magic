@@ -27,10 +27,12 @@ placeContent.innerHTML +=
 
 function addInfo(infoLocation, label) {
     placeContent.innerHTML +=
-        `<div class="className">
-        
+        `<div class="content-flex">
+            <div class="insert-content">
+                            
+            </div>
         </div>`
-    let div = document.querySelector(".className");
+    let div = document.querySelector(".insert-content");
     for (let i = 0; i < infoLocation.length; i++) {
         div.innerHTML +=
             `<div class = "${infoLocation[i].title}${infoLocation[i].id}">
