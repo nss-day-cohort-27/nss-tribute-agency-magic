@@ -45,7 +45,7 @@ const newsfeed = {
             location: "Nashville, Tennessee",
             type:"Bowling for Bees",
             purchase:"Free",
-            image: "../images/newsfeed-images/kanyebowling"
+            image: "../images/newsfeed-images/kanyebowling.png"
         },
         
         {

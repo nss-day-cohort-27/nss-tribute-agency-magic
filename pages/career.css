@@ -20,15 +20,7 @@
 
 }
 
-h2 {
-    text-align: center;
-}
-
-.album-flex {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-around;
+.album-container {
     background: 
         linear-gradient(
             to bottom,
@@ -43,17 +35,32 @@ h2 {
 		.3px .3px 0 black;
 }
 
+h2 {
+    text-align: center;
+}
+
+.album-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
 .album-flex div {
     width: 40%;
-    margin: 1em;
+    margin: 2em;
 
 }
 
 .album-flex img {
     width: 200px;
     height: 200px;
-    box-shadow: rgba(135, 179, 141, 0.5) 3px 3px 5px;
-    border-radius: 5px;
+    /* box-shadow: rgba(255, 255, 255, 0.5) -3px 3px -3px 3px; */
+    /* border-radius: 5px; */
+    box-shadow: 0 15px 10px -10px rgb(0, 212, 0);
+    
+  
 }
 
 .album-card {
@@ -75,9 +82,47 @@ h2 {
 .album-card h5 {
     font-size: .8em;
 }
+.home-container {
+    background: 
+        linear-gradient(
+            rgb(31, 3, 34),
+            black
+        );
+    color: rgb(0, 219, 0);
+}
 
 .mansion-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+}
 
+.mansion-flex div {
+    width: 45%;
+}
+
+.mansion-flex h3 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1em;
+    padding: .5em;
+    background:
+        linear-gradient(
+            to top,
+            black,
+            black,
+            silver
+        );
+    border-radius: 5px;
+    box-shadow: 0 15px 10px -10px rgba(0, 212, 0, 0.5);
+}
+
+.mansion-img {
+    width: 100%;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5);
+    margin: 1em;
+    border-radius: 5px;
 }
 
 .collabs-list {

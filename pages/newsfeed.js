@@ -25,9 +25,9 @@ function buildNews(information){
                 <img src="${information[i].image}" alt="Kanye Image">
                 <h2>${information[i].type}</h2>
                 <ul>
-                    <li>${information[i].date}</li>
-                    <li>${information[i].location}</li>
-                    <li>${information[i].purchase}</li>
+                    <li>Date: ${information[i].date}</li>
+                    <li>Location: ${information[i].location}</li>
+                    <li>Entry Cost: ${information[i].purchase}</li>
                 </ul>
             </div>` 
     }
