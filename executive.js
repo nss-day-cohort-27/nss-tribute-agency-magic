@@ -13,6 +13,11 @@ const data = loadData("Executive")
 const placeContent = document.getElementById("place-content");
 
 placeContent.innerHTML +=
+    `<div class=pic1>
+        <h1><stong>${data.portrait.fullname}</strong></h1>
+    </div>`
+
+placeContent.innerHTML +=
     `<div class="collab1">
         <h2>Collaborators</h2>
         <ul>
@@ -30,14 +35,9 @@ placeContent.innerHTML +=
             
         </ul>
     </div>`
-placeContent.innerHTML +=
-    `<div class=pic1>
-        <img src="${data.portrait.picture}" alt="Kanyes Portrait">
-        <h3>${data.portrait.fullname}</h3>
-    </div>`
  placeContent.innerHTML +=
     `<div class=country1>
-        <h2>Country of Origin</h2>
+        <h1>Country of Origin</h1>
         <p>${data.country[0]}</p>
     </div>`
 placeContent.innerHTML +=

@@ -7,34 +7,53 @@
 
 }
 
-.intro-div {
-    padding: 1em;
+.similar-content {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(31, 3, 34, 0.7) 
+        ),
+        url("../images/kanyebackgroundimg2.jpg") no-repeat fixed;
+    background-size: cover;
+    color: rgb(0, 212, 0);
 }
+
+.intro-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-div h2 {
+    width: 100%;
+} 
 
 .intro-div h3 {
     font-size: 1em;
     text-align: center;
 }
 
+.flex-details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-details p {
+    width: 35%;
+}
+
 .skills-list {
 
 }
 
-h2 {
-    text-align: center;
-}
-
-.album-flex {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-around;
+.album-container {
     background: 
         linear-gradient(
             to bottom,
-            rgb(31, 3, 34),
-            rgb(31, 3, 34),
-            rgba(0, 0, 0, 0.6));
+            rgba(31, 3, 34, 0.8),
+            rgba(31, 3, 34, 0.8),
+            rgba(0, 0, 0, 0.8)),
+            url("../images/kanyebackgroundimg5.jpg") no-repeat fixed;
+    background-size: cover;
     color: rgb(0, 212, 0);
     text-shadow:
 		-.3px -.3px 0 black,
@@ -43,17 +62,36 @@ h2 {
 		.3px .3px 0 black;
 }
 
+h2 {
+    text-align: center;
+    padding: 1em;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.9), 
+        rgba(0, 0, 0, 0.05));
+}
+
+.album-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
 .album-flex div {
     width: 40%;
-    margin: 1em;
+    margin: 2em;
 
 }
 
 .album-flex img {
     width: 200px;
     height: 200px;
-    box-shadow: rgba(135, 179, 141, 0.5) 3px 3px 5px;
-    border-radius: 5px;
+    /* box-shadow: rgba(255, 255, 255, 0.5) -3px 3px -3px 3px; */
+    /* border-radius: 5px; */
+    box-shadow: 0 15px 10px -10px rgb(0, 212, 0);
+    
+  
 }
 
 .album-card {
@@ -75,15 +113,95 @@ h2 {
 .album-card h5 {
     font-size: .8em;
 }
+.home-container {
+    background: 
+        linear-gradient(
+            to top,
+            rgba(31, 3, 34, 0.8),
+            rgba(0, 0, 0, 0.8)),
+        url("../images/kanyebackgroundimg4.jpg") no-repeat fixed;
+    background-size: cover;
+    color: rgb(0, 219, 0);
+}
 
 .mansion-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+}
 
+.mansion-flex div {
+    width: 45%;
+}
+
+.mansion-flex h3 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1em;
+    padding: .5em;
+    background:
+        linear-gradient(
+            to top,
+            rgb(31, 3, 34),
+            black,
+            black,
+            silver
+        );
+    border-radius: 5px;
+    box-shadow: 0 15px 10px -10px rgba(0, 212, 0, 0.5);
+}
+
+.mansion-img {
+    width: 100%;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5);
+    margin: 1em;
+    border-radius: 5px;
 }
 
 .collabs-list {
 
 }
 
-.awards-flex {
+.awards-container {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(31, 3, 34, 0.8)
+        ),
+        url("../images/kanyebackgroundimg3.jpg") no-repeat fixed;
+    background-size: cover;
+    color: rgb(0, 212, 0);
+    text-shadow: 
+        -1px 0 rgb(31, 3, 34), 
+        0 1px rgb(31, 3, 34), 
+        1px 0 rgb(31, 3, 34), 
+        0 -1px rgb(31, 3, 34);
+}
 
+.awards-flex {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin: 2em;
+    
+}
+
+.awards-flex img {
+    box-shadow: 0 15px 10px -10px rgba(0, 212, 0, 0.5);
+    border-radius: 5px;
+    
+}
+
+.awards-flex div {
+    margin: auto;
+}
+
+.awards-flex ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.awards-flex ul li {
+    
 }
