@@ -3,69 +3,133 @@
 /*  #IF0322 - rgb(31, 3, 34) */
 /*  #87B38D - rgb(135, 179, 141) */
 
-.kanye-container {
+.kanye-container-flex {
     display: -webkit-flex;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(31, 3, 34);
+    width: 50%;
+    margin: auto;
+}
+
+.kanye-container {
+    background-color: rgb(31, 3, 34);
+}
+.kanye-container h1 {
+    text-align: center;
+    color: rgb(0, 212, 0);
+    font-size: 5em;
+    padding: 20px;
+    text-shadow: 0 1px 0 rgb(0, 160, 0),
+                 0 2px 0 rgb(0, 140, 0),
+                 0 3px 0 rgb(0, 120, 0),
+                 0 4px 0 rgb(0, 100, 0),
+                 0 5px 0 rgb(0, 80, 0),
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
 }
 
 .kanye-container img {
-    height: 20em;
+    object-fit: cover;
+    height: 400px;
+    align-self: center;
+    width: 400px;
+    margin: 20px;
+    box-shadow: 0 8px 6px -6px rgb(0, 212, 0);
+    background-color: rgb(31, 3, 34);
 }
 
 .spouse1 {
     display: -webkit-flex;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    flex-basis: 50%;
     align-items: center;
-    align-content: center;
+    background-color: rgb(31, 3, 34);
 }
 
 .spouse1 img {
-    justify-content: center;
     align-items: center;
     align-content: center;
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: 0 8px 6px -6px rgb(0, 212, 0);
+    background-color: rgb(31, 3, 34);
 }
 
-.spouse2 {
+.spouse1 h2 {
+    color: rgb(0, 212, 0);
+    text-shadow: 0 1px 0 rgb(0, 160, 0),
+                 0 2px 0 rgb(0, 140, 0),
+                 0 3px 0 rgb(0, 120, 0),
+                 0 4px 0 rgb(0, 100, 0),
+                 0 5px 0 rgb(0, 80, 0),
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
+}
+
+.kid2 {
     display: -webkit-flex;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    flex-basis: 50%;
+    align-items: center;
+    background-color: rgb(31, 3, 34);
+}
+
+.kid2 img {
     align-items: center;
     align-content: center;
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: 0 8px 6px -6px rgb(0, 212, 0);
+    background-color: rgb(31, 3, 34);
 }
 
-.spouce2 img {
-    justify-content: center;
-    align-items: center;
+.kid2 h2 {
+    color: rgb(0, 212, 0);
+    text-shadow: 0 1px 0 rgb(0, 160, 0),
+                 0 2px 0 rgb(0, 140, 0),
+                 0 3px 0 rgb(0, 120, 0),
+                 0 4px 0 rgb(0, 100, 0),
+                 0 5px 0 rgb(0, 80, 0),
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
 }
 
-.kid3 {
-    display: -webkit-flex;
+.content-flex{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(31, 3, 34);
+    padding-bottom: 20px;
 }
 
-.kid3 img {
-    justify-content: center;
-    align-items: center;
-
-}
-
-.kid4 {
-    display: -webkit-flex;
+.insert-content{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(31, 3, 34);
 }
-
-.kid4 img {
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-

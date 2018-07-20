@@ -32,6 +32,15 @@
     text-align: center;
 }
 
+.flex-details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-details p {
+    width: 35%;
+}
+
 .skills-list {
 
 }
@@ -55,7 +64,6 @@
 
 h2 {
     text-align: center;
-    margin: 1em auto;
     padding: 1em;
     background: linear-gradient(
         rgba(0, 0, 0, 0.9), 

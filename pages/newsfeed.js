@@ -21,7 +21,7 @@ function buildNews(information){
     let div = document.querySelector(".newsfeed-flex")
     for (let i = 0; i < information.length; i++) {
         div.innerHTML +=
-            `<div>
+            `<div class="home">
                 <img src="${information[i].image}" alt="Kanye Image">
                 <h2>${information[i].type}</h2>
                 <ul>
@@ -33,4 +33,6 @@ function buildNews(information){
     }
 }
 buildNews(events);
+
+
 
