@@ -22,7 +22,7 @@ placeContent.innerHTML +=
         <h3>${data.birthDate}</h3>
         <h3>${data.countryOfOrigin}</h3>
         <h3>${data.countryOfResidence}</h3>
-        <p>Lorem ipsum lame dolor sit amet, consectetur i don't have my own clothing line adipiscing elit, sed this placeholder text isn't creative do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in this sucks voluptate velit esse cillum i don't have the answersdolore eu fugiat nulla pariatur.</p>
+        <p>Lorem ipsum lame dolor sit amet, consectetur i don't have my own clothing line adipiscing elit, sed this placeholder text isn't creative do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
     </div>
     </div>`
@@ -44,7 +44,7 @@ function addInfo(infoLocation, label) {
                 <div>
                     <h2>${infoLocation[i].name}</h2>
                     <h4>${infoLocation[i][label]}</h4>
-                    <p>Lorem ipsum lame dolor sit amet, consectetur i don't have my own clothing line adipiscing elit, sed this placeholder text isn't creative do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in this sucks voluptate velit esse cillum i don't have the answersdolore eu fugiat nulla pariatur.</p>
+                    <p>Lorem ipsum lame dolor sit amet, consectetur i don't have my own clothing line adipiscing elit, sed this placeholder text isn't creative do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>`
     }

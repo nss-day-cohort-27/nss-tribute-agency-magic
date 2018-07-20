@@ -2,6 +2,13 @@
 /*  #00EB00 - rgb(0, 212, 0) */
 /*  #IF0322 - rgb(31, 3, 34) */
 /*  #87B38D - rgb(135, 179, 141) */
+.collab-container {
+    background: linear-gradient(
+        black,
+        rgba(31, 3, 34, 0.5) 
+    );
+    margin-bottom: 1em;
+}
 .collab-container h2 {
     color: rgb(0, 212, 0);
     font-size: 3em;
@@ -17,11 +24,12 @@
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
+    text-align: center;
+    margin-top: 1.5em;
 
 }
 
 .collab1 {
-    background-color: black;
     padding: center;
     color: white;
     display: flex;
@@ -41,13 +49,10 @@
             rgb(31, 3, 34));
     margin: 1em;
     padding: 1em;
+    box-shadow: 0 15px 10px -10px rgba(0, 212, 0, 0.6);
 
 }
 
-.collabs-card:hover {
-    background-color: white;
-    color: black;
-}
 
 .collabs-card img {
     border-radius: 5px;
@@ -63,41 +68,74 @@
 }
 
 .pic1{
-    background-color: goldenrod;
+    background: linear-gradient(black, goldenrod, goldenrod, rgb(31, 3, 34));
     padding: right;
-    text-align: center
-}
+    text-align: center;
+    color: white;
+    text-shadow: black 1px 1px;
 
-.country1{
-    background-color: goldenrod;
+    
+}
+.pic1 h1 {
+    font-size: 4em;
+    margin-bottom: .4em;
 }
 
 .alias1{
-    background-color:black;
+    background-color:rgb(31, 3, 34);
     text-align: center;
-}
+    color: rgb(0, 212, 0);
 
+}
+.alias1 h2 {
+    color: rgb(0, 212, 0);
+    font-size: 2em;
+    text-shadow: 0 1px 0 rgb(0, 160, 0),
+               0 2px 0 rgb(0, 140, 0),
+               0 3px 0 rgb(0, 120, 0),
+               0 4px 0 rgb(0, 100, 0),
+               0 5px 0 rgb(0, 80, 0),
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+
+}
 .alias1 ul {
     list-style-position: inside;
     list-style-type: none;
     padding: 0;
-}
-
-h1 {
-    color:black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 300%;
+    display:flex;
     text-align: center;
+    justify-content: space-around;
+    font-size: 1.5em;
 }
-h2 {
+.country1 {
+    background: linear-gradient(to top, black, goldenrod, goldenrod, rgb(31, 3, 34));
+}
+.country1 h1 {
     color:whitesmoke;
     font-family: 'Times New Roman', Times, serif;
     font-size: 300%;
-    text-align: center
+    text-align: center;
+    text-shadow: black 1px 1px;
+    font-size: 2em;
+    
+}
+ .country1 h2 {
+    color:whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 300%;
+    text-align: center;
+    font-size: 1.5em; 
 }
 .country1 p {
-    color:black;
+    color: whitesmoke;
     font-family: 'Times New Roman', Times, serif;
     font-size: 200%;
-    text-align: center
+    text-align: center;
+    text-shadow: black 1px 1px;
 }
