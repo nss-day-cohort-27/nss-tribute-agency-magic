@@ -1,6 +1,40 @@
 const executive = {
-    collabs: ["Twista", "Jamie Foxx", "Jay Z", "Cam'ron", "Young Jeezy","Rick Ross", "Bon Iver",
-    "Big Sean", "2 Chains", "Katie Perry","Donald Trump"],
+    
+    collabs: {
+        
+        artist: "Twista",
+        artpic: "../images/twista.jpg";
+        
+        artist: "Jamie Foxx",
+        artpic: "";
+
+        artist: "Jay Z",
+        artpic: "",
+        
+        artist: "Cam'ron",
+        artpic: "",
+        
+        artist: "Young Jeezy",
+        artpic: "",
+        
+        artist: "Rick Ross",
+        artpic: "",
+        
+        artist: "Bon Iver",
+        artpic: "",
+        
+        artist: "Big Sean",
+        artpic: "",
+
+        artist: "2 Chains",
+        artpic: "",
+        
+        artist: "Katie Perry",
+        artpic: "",
+        
+        artist: "Donald Trump",
+        artpic: ""
+    },
 
     portrait:
         {
@@ -9,6 +43,7 @@ const executive = {
         },
     
     aliases: ["Kanye", "Yeezy", "Ye"],
+
     
     country: ["United States"]
 }
